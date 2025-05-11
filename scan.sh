@@ -11,9 +11,6 @@ TARGET="$1"
 OUTPUT_DIR="results"
 OUTPUT_FILE="${OUTPUT_DIR}/${TARGET}_scan.txt"
 
-# Create the results directory if it doesn't exist
-mkdir -p "$OUTPUT_DIR"
-
 # Display scan options
 echo "Select the type of scan to perform:"
 echo "1) Ping Scan (Host Discovery)"
@@ -72,3 +69,4 @@ if [ $? -eq 0 ]; then
 else
   echo "Scan failed."
 fi
+
