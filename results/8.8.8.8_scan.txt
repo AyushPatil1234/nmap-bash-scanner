@@ -1,0 +1,32 @@
+# Nmap 7.96SVN scan initiated Sat May 10 22:27:23 2025 as: nmap -A -oN 8.8.8.8_scan.txt 8.8.8.8
+Nmap scan report for dns.google (8.8.8.8)
+Host is up (0.047s latency).
+Not shown: 994 filtered tcp ports (no-response)
+PORT     STATE  SERVICE    VERSION
+21/tcp   open   ftp?
+53/tcp   open   tcpwrapped
+113/tcp  closed ident
+443/tcp  open   ssl/https  HTTP server (unknown)
+|_ssl-date: TLS randomness does not represent time
+|_http-title: Google Public DNS
+| http-server-header: 
+|   HTTP server (unknown)
+|_  scaffolding on HTTPServer2
+| ssl-cert: Subject: commonName=dns.google
+| Subject Alternative Name: DNS:dns.google, DNS:dns.google.com, DNS:*.dns.google.com, DNS:8888.google, DNS:dns64.dns.google, IP Address:8.8.8.8, IP Address:8.8.4.4, IP Address:2001:4860:4860:0:0:0:0:8888, IP Address:2001:4860:4860:0:0:0:0:8844, IP Address:2001:4860:4860:0:0:0:0:6464, IP Address:2001:4860:4860:0:0:0:0:64
+| Not valid before: 2025-04-21T08:42:40
+|_Not valid after:  2025-07-14T08:42:39
+554/tcp  open   rtsp?
+1723/tcp open   pptp?
+OS fingerprint not ideal because: Didn't receive UDP response. Please try again with -sSU
+No OS matches for host
+Network Distance: 5 hops
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+1   4.87 ms  192.168.12.6
+2   ... 4
+5   61.72 ms dns.google (8.8.8.8)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat May 10 22:31:42 2025 -- 1 IP address (1 host up) scanned in 258.28 seconds
