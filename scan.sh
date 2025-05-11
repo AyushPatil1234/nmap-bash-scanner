@@ -8,7 +8,11 @@ fi
 
 # Define the target and output file
 TARGET="$1"
-OUTPUT_FILE="${TARGET}_scan.txt"
+OUTPUT_DIR="results"
+OUTPUT_FILE="${OUTPUT_DIR}/${TARGET}_scan.txt"
+
+# Create the results directory if it doesn't exist
+mkdir -p "$OUTPUT_DIR"
 
 # Display scan options
 echo "Select the type of scan to perform:"
@@ -68,4 +72,3 @@ if [ $? -eq 0 ]; then
 else
   echo "Scan failed."
 fi
-
