@@ -22,14 +22,14 @@ This Bash script provides an interactive interface to perform various Nmap scans
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/nmap-scan-automation.git
-cd nmap-scan-automation
+git clone https://github.com/AyushPatil1234/nmap-bash-scanner.git
+cd nmap-bash-scanner
 ```
 
 Make the script executable:
 
 ```bash
-chmod +x nmap_scan.sh
+chmod +x scan.sh
 ```
 
 ## Usage
@@ -37,7 +37,7 @@ chmod +x nmap_scan.sh
 Run the script with the target hostname or IP address as an argument:
 
 ```bash
-./nmap_scan.sh <target>
+./scan.sh <target>
 ```
 
 Replace \`<target>\` with the desired hostname or IP address.
@@ -45,7 +45,7 @@ Replace \`<target>\` with the desired hostname or IP address.
 ### Example:
 
 ```bash
-./nmap_scan.sh example.com
+.scan.sh example.com
 ```
 
 The script will prompt you to select a scan type and then execute the chosen scan, saving the results in \`example.com_scan.txt\`.
